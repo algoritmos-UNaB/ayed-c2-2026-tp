@@ -196,6 +196,12 @@ def main() -> None:
 
 El esqueleto vive en este mismo repositorio: carpeta `tp-integrador/esqueleto`.
 
+```text
+git clone https://github.com/algoritmos-UNaB/ayed-c2-2026-tp.git
+```
+
+Sitio de la consigna: https://algoritmos-unab.github.io/ayed-c2-2026-tp/
+
 Cloná el repo de la cátedra, copiá esa carpeta a un repo **nuevo** del grupo y trabajá ahí. No hagan fork eterno sobre el repo de la consigna: si no, se mezclan tags.
 
 """
