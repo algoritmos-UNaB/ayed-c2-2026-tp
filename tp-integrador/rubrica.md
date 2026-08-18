@@ -21,7 +21,7 @@ Regresión: si algo que ya había sido C en una entrega previa deja de andar, es
 
 | # | Ítem | Peso interno |
 | --- | --- | --- |
-| 1.1 | Repo GitHub accesible, tag `entrega-1`, README con integrantes, mails, tema elegido y cómo ejecutar | 20 % |
+| 1.1 | Mail del grupo enviado a Ambrossio **y** Bianco; repo GitHub accesible, tag `entrega-1`, README con integrantes, mails, tema y cómo ejecutar | 20 % |
 | 1.2 | Dataset de la cátedra se carga (CSV) sin hardcodear las filas en el `.py` | 20 % |
 | 1.3 | CLI lista el catálogo (aunque sea con `list` de Python) | 20 % |
 | 1.4 | Funciones con responsabilidad clara (no un único bloque lineal en `main`) | 15 % |

@@ -7,7 +7,7 @@ Las entregas vencen el **domingo 23:59**. Tag de GitHub: `entrega-N`. La defensa
 | Semana | Fechas | Tema de clase | TP integrador |
 | --- | --- | --- | --- |
 | 1 | 19-ago y 21-ago | Introducción a Python. GitHub: alta, clone del esqueleto, primer commit. | Armado de grupos (2 o 3). Elección de tema. |
-| 2 | 26-ago y 28-ago | Tipos de datos mutables e inmutables. Carga de CSV (`csv`, `pathlib`). | Armar repo y cargar dataset. |
+| 2 | 26-ago y 28-ago | Tipos de datos mutables e inmutables. Carga de CSV (`csv`, `pathlib`). | **Mail obligatorio del grupo** a Ambrossio y Bianco. **Preentrega opcional** del repo — domingo **30-ago** |
 | 3 | 02-sep y 04-sep | Funciones y recursividad. | **Entrega 1** — domingo **06-sep** |
 | 4 | 09-sep y 11-sep | Módulos, objetos, encapsulamiento y TADs. | Recursión del dominio. |
 | 5 | 16-sep y 18-sep | Estructuras de datos lineales, interfaces e iteradores. | **Entrega 2** — domingo **20-sep** |

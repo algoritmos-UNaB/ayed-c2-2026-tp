@@ -62,7 +62,7 @@ def layout(title: str, body: str, current: str, extra_class: str = "doc") -> str
     {body}
   </main>
   <footer class="site-footer">
-    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. Grupos: diego.ambrossio@unab.edu.ar y angel.bianco@unab.edu.ar. El código se corrige por tag de GitHub.</div>
   </footer>
 </body>
 </html>
@@ -78,9 +78,8 @@ INDEX_BODY = """
       <p class="lede">Reemplazamos las prácticas y el segundo parcial por un TP que crece entrega a entrega: Pokédex, recetario o biblioteca musical. Consola, Python, grupos de 2 o 3.</p>
       <div class="meta-pills">
         <span class="pill">6 entregas · domingo 23:59</span>
-        <span class="pill">Defensa oral · 25 y 27 nov</span>
-        <span class="pill">CLI · stdlib</span>
-        <span class="pill">IA permitida si se declara</span>
+        <span class="pill">Mail del grupo a Ambrossio y Bianco</span>
+        <span class="pill">Preentrega opcional del repo · 30 ago</span>
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="consigna.html">Leer la consigna</a>
@@ -201,6 +200,10 @@ git clone https://github.com/algoritmos-UNaB/ayed-c2-2026-tp.git
 ```
 
 Sitio de la consigna: https://algoritmos-unab.github.io/ayed-c2-2026-tp/
+
+**El grupo se inscribe por mail, sí o sí, a los dos:** diego.ambrossio@unab.edu.ar y angel.bianco@unab.edu.ar. Asunto `[AyED C2 2026] Grupo Apellido1-Apellido2`.
+
+El **30-ago** pueden hacer una preentrega **solo del repo** (tag `preentrega`) para probar que se puede clonar. No suma nota.
 
 Cloná el repo de la cátedra, copiá esa carpeta a un repo **nuevo** del grupo y trabajá ahí. No hagan fork eterno sobre el repo de la consigna: si no, se mezclan tags.
 

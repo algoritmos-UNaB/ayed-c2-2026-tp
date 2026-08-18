@@ -128,9 +128,33 @@ Idioma del repo: el que elijan, **el mismo** en código, mensajes y docs.
 
 1. Un único repositorio **GitHub** por grupo (público o privado con acceso a la cátedra).
 2. Partir del esqueleto publicado por la cátedra (fork o copia, conservando la estructura de carpetas).
-3. En el campus: **URL del repo** + tag. El código que se corrige es el del tag, no el de `main` suelto.
-4. Tags obligatorios: `entrega-1` … `entrega-6`.
-5. Vencimiento: **domingo 23:59** (hora Argentina) de la fecha de cada entrega.
+3. **Mail obligatorio del grupo** a **los dos** docentes, en el mismo correo (ver §4.1). Sin ese mail el grupo no está inscripto y E1 no se corrige.
+4. En el campus: **URL del repo** + tag. El código que se corrige es el del tag, no el de `main` suelto.
+5. Tags obligatorios: `entrega-1` … `entrega-6`.
+6. Vencimiento: **domingo 23:59** (hora Argentina) de la fecha de cada entrega.
+
+### 4.1 Mail del grupo (obligatorio)
+
+Enviar **un solo mail, a ambos**:
+
+- Dr. Diego Agustín Ambrossio (profesor titular) — diego.ambrossio@unab.edu.ar
+- Lic. Angel Leonardo Bianco (JTP / consultas) — angel.bianco@unab.edu.ar
+
+**Asunto:** `[AyED C2 2026] Grupo Apellido1-Apellido2[-Apellido3]`
+
+**Cuerpo:**
+
+- Nombre, mail y usuario de GitHub de cada integrante
+- Tema elegido (Pokédex / recetario / biblioteca musical)
+- URL del repositorio (si ya está creado)
+
+Plazo: al armar el grupo, **no más tarde que el domingo 30-ago-2026**. Si el 30-ago todavía no hay repo, el mail sale igual con integrantes y tema; la URL tiene que estar sí o sí en E1.
+
+### 4.2 Preentrega del repo (opcional, solo para probar)
+
+El **domingo 30-ago-2026** (una semana antes de E1) pueden hacer una **preentrega solo del repositorio**: esqueleto copiado, `README` con nombres, repo accesible. Tag sugerido: `preentrega`.
+
+No se corrige código ni suma nota. Sirve para comprobar que la cátedra puede clonar el repo y que el mail llegó. El programa todavía no hace falta que liste el catálogo: eso es E1.
 
 **Atraso:** hasta el martes 23:59 siguiente, con **−25 %** de esa entrega. Después no se acepta. La entrega 6 **no admite atraso** (las defensas son el 25 y el 27-nov). Una excepción justificada (salud, trámite) se avisa **antes** del vencimiento.
 
@@ -154,6 +178,7 @@ No declarar IA cuando se usó es suficiente para anular esa entrega.
 
 | Entrega | Vence | Cubre (clase) | Qué tiene que andar |
 | --- | --- | --- | --- |
+| **Preentrega** (opcional) | **domingo 30-ago-2026** | Semanas 1–2 | Solo el repo: esqueleto, README con nombres, mail del grupo a Ambrossio y Bianco. No se puntúa. |
 | **E1** | **domingo 06-sep-2026** | Semanas 1–3 | Repo, README, integrantes, tema elegido, dataset cargado, listar catálogo, funciones básicas, tipos usados con justificación breve (qué es mutable y qué no). CLI mínimo. |
 | **E2** | **domingo 20-sep-2026** | Semanas 3–5 | Módulos. **Recursión del dominio** con traza en el informe. Objetos / TADs del dominio. Protocolo de pruebas (casos escritos; todavía no hace falta haber corrido todos). |
 | **E3** | **domingo 04-oct-2026** | Semanas 5–7 | Encapsulamiento. `ListaEnlazada` + iterador. Pila y cola sobre esa lista. Colección principal del dominio. Excepciones propias. Menú CLI usable. Protocolo ejecutado (tabla pasa / no pasa). |
@@ -201,7 +226,8 @@ Las autoevaluaciones, la guía de prácticos y el segundo parcial del programa 2
 
 - 2 o 3 estudiantes. No hay grupos de 1 salvo excepción explícita de la cátedra.
 - Nombres, mails y GitHub en el `README.md` desde E1.
-- Si alguien abandona: avisar. El resto sigue; no se reabre el cupo después de E2 salvo motivo grave.
+- El grupo **tiene que avisarse por mail a Ambrossio y Bianco** (consigna §4.1). No alcanza con decirlo en clase.
+- Si alguien abandona: avisar por el mismo canal. El resto sigue; no se reabre el cupo después de E2 salvo motivo grave.
 - El trabajo tiene que poder explicarse por cualquiera. “Eso lo hizo el otro” no es respuesta válida en la defensa.
 
 ---

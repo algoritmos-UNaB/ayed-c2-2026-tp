@@ -24,7 +24,7 @@ Mañana arranca el cuatrimestre. En esa clase conviene, además del intro a Pyth
 1. Publicar consigna + esqueleto en el campus / GitHub de la cátedra.
 2. Armar grupos de 2–3 y elegir tema (no se cambia después de E1).
 3. Que cada grupo cree el repo, copie el esqueleto y haga el primer commit (hay `esqueleto/GIT.md`).
-4. Avisar: entrega 1 vence **domingo 06-sep 23:59**.
+4. Avisar: **mail obligatorio** del grupo a diego.ambrossio@unab.edu.ar y angel.bianco@unab.edu.ar (plazo 30-ago). Preentrega opcional del repo ese mismo día. E1 vence **domingo 06-sep 23:59**.
 
 ## Decisiones de diseño (para el equipo docente)
 

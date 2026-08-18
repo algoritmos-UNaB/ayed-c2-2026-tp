@@ -15,7 +15,23 @@ git remote add origin https://github.com/USUARIO/ayed-2026-TEMA.git
 git push -u origin main
 ```
 
-Invitar a los integrantes y a la cátedra.
+Invitar a los integrantes. El grupo se avisa **sí o sí** por mail a:
+
+- diego.ambrossio@unab.edu.ar
+- angel.bianco@unab.edu.ar
+
+Asunto: `[AyED C2 2026] Grupo Apellido1-Apellido2`. Incluir nombres, mails, usuarios de GitHub, tema y URL del repo.
+
+## Preentrega (opcional, domingo 30-ago)
+
+Solo para probar que el repo se puede clonar. No suma nota.
+
+```text
+git tag preentrega
+git push origin preentrega
+```
+
+Después mandan el mail con la URL. El código del catálogo no hace falta todavía.
 
 ## Cada entrega
 

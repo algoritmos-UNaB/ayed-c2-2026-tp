@@ -30,6 +30,7 @@ Cada vencimiento se marca con un tag. Ver `GIT.md`.
 
 | Tag | Vence |
 | --- | --- |
+| `preentrega` (opcional, solo repo) | domingo 30-ago-2026 23:59 |
 | `entrega-1` | domingo 06-sep-2026 23:59 |
 | `entrega-2` | domingo 20-sep-2026 23:59 |
 | `entrega-3` | domingo 04-oct-2026 23:59 |
@@ -40,3 +41,5 @@ Cada vencimiento se marca con un tag. Ver `GIT.md`.
 Defensa oral (reemplaza el 2do parcial): 25 y 27-nov-2026.
 
 La cátedra corrige el **tag**, no el último commit suelto de `main`.
+
+El grupo se avisa por mail a diego.ambrossio@unab.edu.ar **y** angel.bianco@unab.edu.ar. Ver `GIT.md`.

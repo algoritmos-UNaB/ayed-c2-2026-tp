@@ -32,6 +32,8 @@
 <pre><code class="language-text">git clone https://github.com/algoritmos-UNaB/ayed-c2-2026-tp.git
 </code></pre>
 <p>Sitio de la consigna: https://algoritmos-unab.github.io/ayed-c2-2026-tp/</p>
+<p><strong>El grupo se inscribe por mail, sí o sí, a los dos:</strong> diego.ambrossio@unab.edu.ar y angel.bianco@unab.edu.ar. Asunto <code>[AyED C2 2026] Grupo Apellido1-Apellido2</code>.</p>
+<p>El <strong>30-ago</strong> pueden hacer una preentrega <strong>solo del repo</strong> (tag <code>preentrega</code>) para probar que se puede clonar. No suma nota.</p>
 <p>Cloná el repo de la cátedra, copiá esa carpeta a un repo <strong>nuevo</strong> del grupo y trabajá ahí. No hagan fork eterno sobre el repo de la consigna: si no, se mezclan tags.</p>
 <h1>TP integrador — AyED C2 2026</h1>
 <p>Repositorio del grupo. Partir de este esqueleto. No borrar la estructura de <code>src/</code> ni de <code>docs/</code>.</p>
@@ -80,6 +82,10 @@
 </thead>
 <tbody>
 <tr>
+<td><code>preentrega</code> (opcional, solo repo)</td>
+<td>domingo 30-ago-2026 23:59</td>
+</tr>
+<tr>
 <td><code>entrega-1</code></td>
 <td>domingo 06-sep-2026 23:59</td>
 </tr>
@@ -107,6 +113,7 @@
 </table>
 <p>Defensa oral (reemplaza el 2do parcial): 25 y 27-nov-2026.</p>
 <p>La cátedra corrige el <strong>tag</strong>, no el último commit suelto de <code>main</code>.</p>
+<p>El grupo se avisa por mail a diego.ambrossio@unab.edu.ar <strong>y</strong> angel.bianco@unab.edu.ar. Ver <code>GIT.md</code>.</p>
 <h1>Git mínimo para este TP</h1>
 <h2>Una sola vez</h2>
 <ol>
@@ -121,7 +128,18 @@ git branch -M main
 git remote add origin https://github.com/USUARIO/ayed-2026-TEMA.git
 git push -u origin main
 </code></pre>
-<p>Invitar a los integrantes y a la cátedra.</p>
+<p>Invitar a los integrantes. El grupo se avisa <strong>sí o sí</strong> por mail a:</p>
+<ul>
+<li>diego.ambrossio@unab.edu.ar</li>
+<li>angel.bianco@unab.edu.ar</li>
+</ul>
+<p>Asunto: <code>[AyED C2 2026] Grupo Apellido1-Apellido2</code>. Incluir nombres, mails, usuarios de GitHub, tema y URL del repo.</p>
+<h2>Preentrega (opcional, domingo 30-ago)</h2>
+<p>Solo para probar que el repo se puede clonar. No suma nota.</p>
+<pre><code class="language-text">git tag preentrega
+git push origin preentrega
+</code></pre>
+<p>Después mandan el mail con la URL. El código del catálogo no hace falta todavía.</p>
 <h2>Cada entrega</h2>
 <pre><code class="language-text">git add .
 git status
@@ -142,7 +160,7 @@ git push origin entrega-3
 <p><code>__pycache__/</code>, <code>.venv/</code>, archivos <code>.bin</code> de prueba locales (el programa los tiene que <strong>poder generar</strong>). El <code>.gitignore</code> del esqueleto ya cubre lo habitual.</p>
   </main>
   <footer class="site-footer">
-    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. Grupos: diego.ambrossio@unab.edu.ar y angel.bianco@unab.edu.ar. El código se corrige por tag de GitHub.</div>
   </footer>
 </body>
 </html>
