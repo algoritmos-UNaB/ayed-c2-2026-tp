@@ -75,11 +75,11 @@ INDEX_BODY = """
     <div>
       <p class="kicker">Un solo trabajo, todo el cuatrimestre</p>
       <h1>Tres temas.<br>Las mismas estructuras.</h1>
-      <p class="lede">Reemplazamos las prácticas sueltas por un TP que crece entrega a entrega: Pokédex, recetario o biblioteca musical. Consola, Python, grupos de 2 o 3.</p>
+      <p class="lede">Reemplazamos las prácticas y el segundo parcial por un TP que crece entrega a entrega: Pokédex, recetario o biblioteca musical. Consola, Python, grupos de 2 o 3.</p>
       <div class="meta-pills">
         <span class="pill">6 entregas · domingo 23:59</span>
+        <span class="pill">Defensa oral · 25 y 27 nov</span>
         <span class="pill">CLI · stdlib</span>
-        <span class="pill">GitHub obligatorio</span>
         <span class="pill">IA permitida si se declara</span>
       </div>
       <div class="actions">
@@ -90,7 +90,7 @@ INDEX_BODY = """
     <aside class="deadline">
       <span>Próximo cierre</span>
       <strong>Entrega 1</strong>
-      <p>Domingo 30 de agosto de 2026, 23:59 (Argentina). Repo, tema, CSV y listar el catálogo.</p>
+      <p>Domingo 6 de septiembre de 2026, 23:59 (Argentina). Repo, tema, CSV, funciones y listar el catálogo.</p>
       <a href="rubrica.html">Ver checklist de E1</a>
     </aside>
   </section>
@@ -117,19 +117,19 @@ INDEX_BODY = """
     <div class="panel">
       <h2>Seis entregas</h2>
       <ol class="entregas">
-        <li><span class="tag">E1</span><span>Repo, dataset y listar</span><span>30 ago</span></li>
-        <li><span class="tag">E2</span><span>Módulos y recursión</span><span>13 sep</span></li>
+        <li><span class="tag">E1</span><span>Repo, dataset y listar</span><span>6 sep</span></li>
+        <li><span class="tag">E2</span><span>Módulos y recursión</span><span>20 sep</span></li>
         <li><span class="tag">E3</span><span>Lista, pila, cola, excepciones</span><span>4 oct</span></li>
         <li><span class="tag">E4</span><span>Búsqueda, orden, complejidad</span><span>1 nov</span></li>
         <li><span class="tag">E5</span><span>CSV + binario</span><span>15 nov</span></li>
-        <li><span class="tag">E6</span><span>Cierre y defensa oral</span><span>22 nov</span></li>
+        <li><span class="tag">E6</span><span>Cierre del producto</span><span>22 nov</span></li>
       </ol>
     </div>
     <div class="panel">
       <h2>Cómo se nota</h2>
       <div class="bars" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="legend">Parcial 1 · 25% &nbsp; Parcial 2 · 25% &nbsp; TP integrador · 40%</p>
-      <p>El TP se aprueba con 24/40 y con defensa oral de todo el grupo. Cada parcial, con 60%.</p>
+      <p class="legend">Parcial 1 · 25% &nbsp; Entregas · 50% &nbsp; Defensa oral · 25%</p>
+      <p>La defensa del 25 y 27 de noviembre reemplaza al segundo parcial. El 1er parcial se rinde el 14–16 de octubre.</p>
       <p><a href="cronograma.html">Cronograma completo</a> · <a href="rubrica.html">Rúbrica</a></p>
     </div>
   </section>

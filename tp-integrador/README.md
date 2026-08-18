@@ -24,15 +24,15 @@ Mañana arranca el cuatrimestre. En esa clase conviene, además del intro a Pyth
 1. Publicar consigna + esqueleto en el campus / GitHub de la cátedra.
 2. Armar grupos de 2–3 y elegir tema (no se cambia después de E1).
 3. Que cada grupo cree el repo, copie el esqueleto y haga el primer commit (hay `esqueleto/GIT.md`).
-4. Avisar: entrega 1 vence **domingo 30-ago 23:59**.
+4. Avisar: entrega 1 vence **domingo 06-sep 23:59**.
 
 ## Decisiones de diseño (para el equipo docente)
 
 - Un solo TP, tres pieles: Pokédex, recetario, biblioteca musical.
 - Grupos de 2 o 3. CLI. Solo biblioteca estándar de Python.
-- Seis entregas incrementales, domingo 23:59, tag en GitHub.
+- Seis entregas incrementales, domingo 23:59, tag en GitHub. E1 el 06-sep.
 - Lista enlazada propia; pila y cola sobre esa lista.
 - Persistencia: archivo de texto (CSV) + archivo binario (`struct`).
 - IA permitida si se declara y se puede defender en el oral.
 - Verificación: protocolo de pruebas manual (no se exige `pytest`).
-- Semana 5 suspendida: se recupera antes de la semana 6.
+- El TP reemplaza prácticas y 2do parcial. Defensas: 25 y 27-nov.

@@ -261,8 +261,8 @@ nav a:hover {
 }
 
 .bars span:nth-child(1) { flex: 25; background: var(--forest); }
-.bars span:nth-child(2) { flex: 25; background: #6a8a76; }
-.bars span:nth-child(3) { flex: 40; background: var(--accent); }
+.bars span:nth-child(2) { flex: 50; background: var(--accent); }
+.bars span:nth-child(3) { flex: 25; background: #6a8a76; }
 
 .legend { font-size: 0.92rem; color: var(--ink-soft); }
 

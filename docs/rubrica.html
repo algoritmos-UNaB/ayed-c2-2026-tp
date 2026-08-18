@@ -64,7 +64,7 @@
 <p>Si el CLI <strong>no arranca</strong> con el dataset de la cátedra: esa entrega vale <strong>0</strong> (salvo E1, donde alcanza un error claro y un README que explique cómo debería correr).</p>
 <p>Regresión: si algo que ya había sido C en una entrega previa deja de andar, ese ítem de la entrega actual se marca N aunque el tema nuevo esté bien.</p>
 <hr />
-<h2>Entrega 1 — 4 % — repo y catálogo vivo</h2>
+<h2>Entrega 1 — 5 % — repo y catálogo vivo</h2>
 <table>
 <thead>
 <tr>
@@ -77,32 +77,37 @@
 <tr>
 <td>1.1</td>
 <td>Repo GitHub accesible, tag <code>entrega-1</code>, README con integrantes, mails, tema elegido y cómo ejecutar</td>
-<td>25 %</td>
+<td>20 %</td>
 </tr>
 <tr>
 <td>1.2</td>
 <td>Dataset de la cátedra se carga (CSV) sin hardcodear las filas en el <code>.py</code></td>
-<td>25 %</td>
+<td>20 %</td>
 </tr>
 <tr>
 <td>1.3</td>
 <td>CLI lista el catálogo (aunque sea con <code>list</code> de Python)</td>
-<td>25 %</td>
+<td>20 %</td>
 </tr>
 <tr>
 <td>1.4</td>
-<td>Informe arrancado: por qué eligieron el tema; qué objetos son mutables e inmutables en su modelo</td>
+<td>Funciones con responsabilidad clara (no un único bloque lineal en <code>main</code>)</td>
 <td>15 %</td>
 </tr>
 <tr>
 <td>1.5</td>
+<td>Informe arrancado: por qué eligieron el tema; qué objetos son mutables e inmutables en su modelo</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>1.6</td>
 <td><code>docs/DECLARACION_IA.md</code> presente (aunque diga “no usamos”)</td>
 <td>10 %</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2>Entrega 2 — 5 % — funciones, módulos, recursión</h2>
+<h2>Entrega 2 — 7 % — módulos, recursión, objetos</h2>
 <table>
 <thead>
 <tr>
@@ -114,7 +119,7 @@
 <tbody>
 <tr>
 <td>2.1</td>
-<td>Código partido en módulos; <code>main</code> no concentra la lógica del dominio</td>
+<td>Código partido en módulos; clases del dominio aunque todavía usen <code>list</code>; <code>main</code> no concentra la lógica</td>
 <td>20 %</td>
 </tr>
 <tr>
@@ -140,7 +145,7 @@
 </tbody>
 </table>
 <hr />
-<h2>Entrega 3 — 9 % — TADs, lineales, excepciones</h2>
+<h2>Entrega 3 — 12 % — TADs, lineales, excepciones</h2>
 <table>
 <thead>
 <tr>
@@ -193,7 +198,7 @@
 </tbody>
 </table>
 <hr />
-<h2>Entrega 4 — 7 % — búsqueda, orden, complejidad</h2>
+<h2>Entrega 4 — 9 % — búsqueda, orden, complejidad</h2>
 <table>
 <thead>
 <tr>
@@ -237,7 +242,7 @@
 </table>
 <p>Usar <code>sorted</code> / <code>list.sort</code> para cumplir 4.2–4.3 = N en esos ítems.</p>
 <hr />
-<h2>Entrega 5 — 7 % — archivos texto y binario</h2>
+<h2>Entrega 5 — 9 % — archivos texto y binario</h2>
 <table>
 <thead>
 <tr>
@@ -280,14 +285,13 @@
 </tbody>
 </table>
 <hr />
-<h2>Entrega 6 + defensa — 8 % — cierre</h2>
-<h3>Repo (5 de los 8 puntos)</h3>
+<h2>Entrega 6 — 8 % — cierre del producto</h2>
 <table>
 <thead>
 <tr>
 <th>#</th>
 <th>Ítem</th>
-<th>Peso interno (sobre 5)</th>
+<th>Peso interno</th>
 </tr>
 </thead>
 <tbody>
@@ -318,31 +322,46 @@
 </tr>
 </tbody>
 </table>
-<h3>Oral (3 de los 8 puntos)</h3>
-<p>10 minutos. Los tres puntos se reparten entre integrantes; si uno no habla o no puede defender, <strong>esa persona</strong> tiene 0 en el oral (el resto conserva su oral).</p>
+<hr />
+<h2>Defensa oral — 25 % — reemplaza el 2do parcial</h2>
+<p>15 minutos. 25 y 27 de noviembre de 2026. Los puntos se reparten entre integrantes; si uno no habla o no puede defender, <strong>esa persona</strong> tiene 0 en el oral (el resto conserva su oral).</p>
 <table>
 <thead>
 <tr>
 <th>#</th>
 <th>Qué se mira</th>
+<th>Peso</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>O1</td>
-<td>Explicar un TAD con invariante (pila, cola o lista)</td>
+<td>Explicar un TAD con invariante (pila, cola o lista) y mostrarlo en el código</td>
+<td>25 %</td>
 </tr>
 <tr>
 <td>O2</td>
-<td>Traza de la recursión o del binario (layout + un <code>seek</code>)</td>
+<td>Traza de la recursión sobre un ítem real del dataset</td>
+<td>20 %</td>
 </tr>
 <tr>
 <td>O3</td>
+<td>Persistencia: layout del binario y un <code>seek</code> / actualización por posición</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>O4</td>
+<td>Complejidad de una operación del sistema (por qué esa cota, qué midieron)</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>O5</td>
 <td>Responder un “¿y si…?” (equipo lleno, cola vacía, archivo truncado, catálogo no ordenado)</td>
+<td>20 %</td>
 </tr>
 </tbody>
 </table>
-<p>C / P / N también acá. Lectura de código en voz alta sin saber qué hace = N.</p>
+<p>C / P / N también acá. Lectura de código en voz alta sin saber qué hace = N. Aprueba con 15 / 25.</p>
 <hr />
   </main>
   <footer class="site-footer">

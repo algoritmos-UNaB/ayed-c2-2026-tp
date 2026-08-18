@@ -6,7 +6,7 @@
 **Modalidad:** grupos de **2 o 3** personas · programa de **consola (CLI)**  
 **Entregas:** 6 incrementales, domingo 23:59, tag de GitHub `entrega-N`
 
-Este trabajo **reemplaza las prácticas** de la materia. En clase hay mini-ejercicios para fijar cada tema; el hilo conductor del cuatrimestre es **un mismo sistema que crece entrega a entrega**.
+Este trabajo **reemplaza las prácticas y el segundo parcial**. En clase hay mini-ejercicios para fijar cada tema; el hilo conductor del cuatrimestre es **un mismo sistema que crece entrega a entrega**. La defensa oral de noviembre es la instancia que ocupa el lugar del 2do parcial.
 
 ---
 
@@ -132,9 +132,9 @@ Idioma del repo: el que elijan, **el mismo** en código, mensajes y docs.
 4. Tags obligatorios: `entrega-1` … `entrega-6`.
 5. Vencimiento: **domingo 23:59** (hora Argentina) de la fecha de cada entrega.
 
-**Atraso:** hasta el martes 23:59 siguiente, con **−25 %** de esa entrega. Después no se acepta. La entrega 6 **no admite atraso** (hay defensas en la semana 16). Una excepción justificada (salud, trámite) se avisa **antes** del vencimiento.
+**Atraso:** hasta el martes 23:59 siguiente, con **−25 %** de esa entrega. Después no se acepta. La entrega 6 **no admite atraso** (las defensas son el 25 y el 27-nov). Una excepción justificada (salud, trámite) se avisa **antes** del vencimiento.
 
-**Defensa oral (semana 16, 10 minutos):** todos los integrantes hablan. Pueden pedir cualquier función, traza de recursión, invariante de la pila, formato del binario o un caso del protocolo de pruebas. Si alguien no puede explicar el código que “escribió”, esa persona no aprueba el TP aunque el repo esté bien.
+**Defensa oral (25 y 27-nov-2026, 15 minutos):** reemplaza al 2do parcial. Todos los integrantes hablan. Pueden pedir cualquier función, traza de recursión, invariante de la pila, formato del binario o un caso del protocolo de pruebas. Si alguien no puede explicar el código que “escribió”, esa persona no aprueba la defensa aunque el repo esté bien. Quien falte con justificación rinde oral de recuperatorio en la semana del 02-dic.
 
 ---
 
@@ -154,14 +154,14 @@ No declarar IA cuando se usó es suficiente para anular esa entrega.
 
 | Entrega | Vence | Cubre (clase) | Qué tiene que andar |
 | --- | --- | --- | --- |
-| **E1** | **domingo 30-ago-2026** | Semanas 1–2 | Repo, README, integrantes, tema elegido, dataset cargado, listar catálogo, tipos usados con justificación breve (qué es mutable y qué no). CLI mínimo. |
-| **E2** | **domingo 13-sep-2026** | Semanas 3–4 | Módulos. Funciones con responsabilidades claras. **Recursión del dominio** con traza en el informe. Protocolo de pruebas (casos escritos, todavía no hace falta haber corrido todos). |
-| **E3** | **domingo 04-oct-2026** | Semanas 4–7 + recuperación sem. 5 | Objetos + encapsulamiento. `ListaEnlazada` + iterador. Pila y cola sobre esa lista. Colección principal del dominio. Excepciones propias. Menú CLI usable. Protocolo ejecutado (tabla pasa / no pasa). |
+| **E1** | **domingo 06-sep-2026** | Semanas 1–3 | Repo, README, integrantes, tema elegido, dataset cargado, listar catálogo, funciones básicas, tipos usados con justificación breve (qué es mutable y qué no). CLI mínimo. |
+| **E2** | **domingo 20-sep-2026** | Semanas 3–5 | Módulos. **Recursión del dominio** con traza en el informe. Objetos / TADs del dominio. Protocolo de pruebas (casos escritos; todavía no hace falta haber corrido todos). |
+| **E3** | **domingo 04-oct-2026** | Semanas 5–7 | Encapsulamiento. `ListaEnlazada` + iterador. Pila y cola sobre esa lista. Colección principal del dominio. Excepciones propias. Menú CLI usable. Protocolo ejecutado (tabla pasa / no pasa). |
 | **E4** | **domingo 01-nov-2026** | Semanas 10–11 | Búsqueda lineal y binaria. Dos ordenamientos propios. Tabla de complejidad + medición de tiempos. |
 | **E5** | **domingo 15-nov-2026** | Semanas 12–13 | CSV secuencial + binario con `struct`. Alta / baja / modificación persistente. Acceso a un registro por posición. |
-| **E6** | **domingo 22-nov-2026** | Integración | Producto cerrado: las 10 operaciones del menú, informe completo, protocolo de pruebas de regresión, declaración de IA al día. **Defensa oral: 02 y 04-dic-2026.** |
+| **E6** | **domingo 22-nov-2026** | Integración | Producto cerrado: las 10 operaciones del menú, informe completo, protocolo de pruebas de regresión, declaración de IA al día. **Defensa oral: 25 y 27-nov-2026.** |
 
-La entrega 3 cierra **diez días antes del 1er parcial**. La 6 cierra antes del 2do parcial; la defensa es en la semana de cierre de notas.
+La entrega 3 cierra **diez días antes del 1er parcial**. La 6 vence el 22-nov; las defensas son el 25 y el 27-nov (en el lugar del 2do parcial).
 
 ---
 
@@ -170,20 +170,21 @@ La entrega 3 cierra **diez días antes del 1er parcial**. La 6 cierra antes del 
 | Instancia | Peso |
 | --- | --- |
 | 1er parcial | 25 % |
-| 2do parcial | 25 % |
-| Entrega 1 | 4 % |
-| Entrega 2 | 5 % |
-| Entrega 3 | 9 % |
-| Entrega 4 | 7 % |
-| Entrega 5 | 7 % |
-| Entrega 6 + defensa | 8 % |
+| Entrega 1 | 5 % |
+| Entrega 2 | 7 % |
+| Entrega 3 | 12 % |
+| Entrega 4 | 9 % |
+| Entrega 5 | 9 % |
+| Entrega 6 | 8 % |
+| Defensa oral (reemplaza el 2do parcial) | 25 % |
 
-- Cada parcial se aprueba con **60 %**. Recuperatorios según cronograma.
-- El TP se aprueba con **24 / 40** (60 %) **y** defensa oral con todos los integrantes.
+- El 1er parcial se aprueba con **60 %**. Recuperatorio en la semana del 02-dic.
+- Las seis entregas se aprueban con **30 / 50**.
+- La defensa se aprueba con **15 / 25** y con todos los integrantes presentes.
 - Cada entrega se corrige con el checklist de `rubrica.md`. Entrega que no corre (el CLI no arranca) se puntúa 0 en “funciona”.
-- Nota extra (hasta 2 puntos del TP, no pasa de 40): usar la lista enlazada también en el catálogo **y** un índice `dict` comparado en el informe; o un tercer algoritmo de ordenamiento medido.
+- Nota extra (hasta 2 puntos sobre las entregas, no pasa de 50): usar la lista enlazada también en el catálogo **y** un índice `dict` comparado en el informe; o un tercer algoritmo de ordenamiento medido.
 
-Las autoevaluaciones y la guía de prácticos del programa 2023 quedan absorbidas por este TP.
+Las autoevaluaciones, la guía de prácticos y el segundo parcial del programa 2023 quedan absorbidos por este TP.
 
 ---
 
