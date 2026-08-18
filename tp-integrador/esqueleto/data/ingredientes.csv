@@ -1,0 +1,115 @@
+receta_id,nombre,cantidad,unidad
+1,perejil,50,g
+1,ajo,4,dientes
+1,oregano,5,g
+1,aceite de oliva,80,ml
+1,vinagre,30,ml
+1,aji molido,5,g
+2,tomate,3,u
+2,cebolla,1,u
+2,morron,1,u
+2,aceite de oliva,40,ml
+2,vinagre,20,ml
+3,cebolla,2,u
+3,zanahoria,1,u
+3,ajo,2,dientes
+3,aceite,30,ml
+4,papa,800,g
+4,leche,100,ml
+4,manteca,40,g
+4,sal,5,g
+5,harina,500,g
+5,grasa,100,g
+5,agua,150,ml
+5,sal,8,g
+6,harina,500,g
+6,agua,300,ml
+6,levadura,10,g
+6,aceite,20,ml
+6,sal,8,g
+7,albahaca,80,g
+7,ajo,1,dientes
+7,pinones,30,g
+7,queso parmesano,40,g
+7,aceite de oliva,80,ml
+8,tomate,3,u
+8,cebolla,1,u
+8,cilantro,20,g
+8,lima,1,u
+8,sal,3,g
+9,vacio,1200,g
+9,chorizo,4,u
+9,sal gruesa,20,g
+10,carne picada,500,g
+10,huevo,1,u
+10,comino,3,g
+11,milanesa de ternera,4,u
+11,salsa de tomate,200,ml
+11,muzzarella,250,g
+11,jamon,150,g
+12,maiz blanco,300,g
+12,poroto,200,g
+12,zapallo,400,g
+12,chorizo colorado,200,g
+13,muzzarella,400,g
+13,salsa de tomate,150,ml
+13,oregano,5,g
+14,chorizo,4,u
+14,pan,4,u
+15,huevo,4,u
+15,leche,400,ml
+15,azucar,120,g
+15,esencia de vainilla,5,ml
+16,harina,150,g
+16,leche,250,ml
+16,huevo,2,u
+16,dulce de leche,200,g
+17,carne,400,g
+17,tortilla de maiz,8,u
+18,palta,3,u
+18,lima,1,u
+18,sal,3,g
+19,fideos,400,g
+19,tomate,400,g
+20,papa,800,g
+20,harina,200,g
+20,huevo,1,u
+21,papa,600,g
+21,huevo,6,u
+21,cebolla,1,u
+22,pollo,1200,g
+22,papa,800,g
+22,aceite,30,ml
+22,provenzal,10,g
+23,calabaza,800,g
+23,cebolla,1,u
+23,caldo,500,ml
+24,arroz,100,g
+24,leche,800,ml
+24,azucar,80,g
+24,canela,1,u
+25,chocolate,200,g
+25,manteca,150,g
+25,azucar,150,g
+25,huevo,3,u
+25,harina,80,g
+26,choclo,6,u
+26,cebolla,1,u
+26,leche,100,ml
+26,manteca,20,g
+27,carne picada,500,g
+27,pan,4,u
+27,lechuga,4,hojas
+27,tomate,1,u
+28,papa,400,g
+28,zanahoria,200,g
+28,arveja,150,g
+28,mayonesa,120,g
+29,garbanzo,400,g
+29,leche de coco,200,ml
+29,curry,15,g
+29,cebolla,1,u
+30,arroz arborio,300,g
+30,hongo,200,g
+30,caldo,800,ml
+30,queso parmesano,50,g

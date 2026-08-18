@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómo entregar — AyED C2 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <small>00184 · UNaB · C2 2026</small>
+        <strong>TP integrador</strong>
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consigna.html">Consigna</a>
+        <a href="cronograma.html">Cronograma</a>
+        <a href="rubrica.html">Rúbrica</a>
+        <a href="entregar.html" aria-current="page">Cómo entregar</a>
+        <a href="datasets.html">Datasets</a>
+      </nav>
+    </div>
+  </header>
+  <main class="doc">
+    <h1>Cómo entregar</h1>
+<p>El esqueleto vive en este mismo repositorio: carpeta <code>tp-integrador/esqueleto</code>.</p>
+<p>Cloná el repo de la cátedra, copiá esa carpeta a un repo <strong>nuevo</strong> del grupo y trabajá ahí. No hagan fork eterno sobre el repo de la consigna: si no, se mezclan tags.</p>
+<h1>TP integrador — AyED C2 2026</h1>
+<p>Repositorio del grupo. Partir de este esqueleto. No borrar la estructura de <code>src/</code> ni de <code>docs/</code>.</p>
+<h2>Integrantes</h2>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Mail</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tema elegido:</strong> Pokédex / Recetario / Biblioteca musical (dejar uno)</p>
+<h2>Cómo ejecutar</h2>
+<p>Desde la raíz del repo, con Python 3.10 o superior:</p>
+<pre><code class="language-text">python -m src.main
+</code></pre>
+<p>En Windows, si <code>python</code> no anda: <code>py -3 -m src.main</code>.</p>
+<p>Solo biblioteca estándar. No hay <code>requirements.txt</code> a propósito.</p>
+<h2>Entregas</h2>
+<p>Cada vencimiento se marca con un tag. Ver <code>GIT.md</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Vence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>entrega-1</code></td>
+<td>domingo 30-ago-2026 23:59</td>
+</tr>
+<tr>
+<td><code>entrega-2</code></td>
+<td>domingo 13-sep-2026 23:59</td>
+</tr>
+<tr>
+<td><code>entrega-3</code></td>
+<td>domingo 04-oct-2026 23:59</td>
+</tr>
+<tr>
+<td><code>entrega-4</code></td>
+<td>domingo 01-nov-2026 23:59</td>
+</tr>
+<tr>
+<td><code>entrega-5</code></td>
+<td>domingo 15-nov-2026 23:59</td>
+</tr>
+<tr>
+<td><code>entrega-6</code></td>
+<td>domingo 22-nov-2026 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>La cátedra corrige el <strong>tag</strong>, no el último commit suelto de <code>main</code>.</p>
+<h1>Git mínimo para este TP</h1>
+<h2>Una sola vez</h2>
+<ol>
+<li>Crear un repo vacío en GitHub (nombre sugerido: <code>ayed-2026-pokedex</code>, <code>ayed-2026-recetario</code> o <code>ayed-2026-musica</code>). No uses el repo de la consigna de la cátedra.</li>
+<li>Copiar esta carpeta <code>esqueleto</code> (no el de los otros grupos).</li>
+<li>Subir:</li>
+</ol>
+<pre><code class="language-text">git init
+git add .
+git commit -m &quot;E1: esqueleto y datos del tema&quot;
+git branch -M main
+git remote add origin https://github.com/USUARIO/ayed-2026-TEMA.git
+git push -u origin main
+</code></pre>
+<p>Invitar a los integrantes y a la cátedra.</p>
+<h2>Cada entrega</h2>
+<pre><code class="language-text">git add .
+git status
+git commit -m &quot;E3: lista enlazada, pila y cola&quot;
+git tag entrega-3
+git push
+git push origin entrega-3
+</code></pre>
+<p>El mensaje de commit puede ser el que quieran; el <strong>tag</strong> tiene que ser exactamente <code>entrega-1</code> … <code>entrega-6</code>.</p>
+<p>Si se equivocan antes del vencimiento:</p>
+<pre><code class="language-text">git tag -d entrega-3
+git push origin :refs/tags/entrega-3
+git tag entrega-3
+git push origin entrega-3
+</code></pre>
+<p>Después del domingo 23:59 no retaguear en silencio: ese tag ya se está corrigiendo.</p>
+<h2>Qué no subir</h2>
+<p><code>__pycache__/</code>, <code>.venv/</code>, archivos <code>.bin</code> de prueba locales (el programa los tiene que <strong>poder generar</strong>). El <code>.gitignore</code> del esqueleto ya cubre lo habitual.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+  </footer>
+</body>
+</html>

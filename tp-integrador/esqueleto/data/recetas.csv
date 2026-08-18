@@ -1,0 +1,31 @@
+id,nombre,tiempo_min,dificultad,categoria
+1,Chimichurri,15,baja,salsa
+2,Salsa criolla,20,baja,salsa
+3,Sofrito,25,baja,base
+4,Pure de papas,30,baja,acompanamiento
+5,Masa de empanadas,90,media,base
+6,Masa de pizza,120,media,base
+7,Pesto,15,baja,salsa
+8,Pico de gallo,15,baja,salsa
+9,Asado,180,media,principal
+10,Empanadas de carne,150,media,principal
+11,Milanesa napolitana,50,media,principal
+12,Locro,150,alta,principal
+13,Pizza muzzarella,140,media,principal
+14,Choripan,25,baja,principal
+15,Flan casero,70,media,postre
+16,Panqueques con dulce de leche,40,baja,postre
+17,Tacos de carne,40,baja,principal
+18,Guacamole,15,baja,entrada
+19,Pasta con salsa fileto,45,baja,principal
+20,Noquis con pesto,50,media,principal
+21,Tortilla de papas,40,media,principal
+22,Pollo al horno con papas,70,baja,principal
+23,Sopa de calabaza,40,baja,entrada
+24,Arroz con leche,45,baja,postre
+25,Brownies,50,media,postre
+26,Humita,60,media,principal
+27,Hamburguesa casera,35,baja,principal
+28,Ensalada rusa,35,baja,entrada
+29,Curry de garbanzos,40,baja,principal
+30,Risotto de hongos,45,alta,principal

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rúbrica — AyED C2 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <small>00184 · UNaB · C2 2026</small>
+        <strong>TP integrador</strong>
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consigna.html">Consigna</a>
+        <a href="cronograma.html">Cronograma</a>
+        <a href="rubrica.html" aria-current="page">Rúbrica</a>
+        <a href="entregar.html">Cómo entregar</a>
+        <a href="datasets.html">Datasets</a>
+      </nav>
+    </div>
+  </header>
+  <main class="doc">
+    <h1>Rúbrica del TP integrador — C2 2026</h1>
+<p>Comisión grande: cada entrega se corrige con <strong>checklist</strong>. Escala por ítem:</p>
+<table>
+<thead>
+<tr>
+<th>Letra</th>
+<th>Significado</th>
+<th>Fracción de ese ítem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>Cumple</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Parcial (está, pero frágil / incompleto / mal encapsulado)</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>N</td>
+<td>No cumple o no corre</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>NA</td>
+<td>No aplica todavía</td>
+<td>se ignora</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Puntaje de la entrega</strong> = (suma de C/P/N ponderados) × peso de la entrega × (1 − 0.25 si llegó el lunes o el martes).</p>
+<p>Si el CLI <strong>no arranca</strong> con el dataset de la cátedra: esa entrega vale <strong>0</strong> (salvo E1, donde alcanza un error claro y un README que explique cómo debería correr).</p>
+<p>Regresión: si algo que ya había sido C en una entrega previa deja de andar, ese ítem de la entrega actual se marca N aunque el tema nuevo esté bien.</p>
+<hr />
+<h2>Entrega 1 — 4 % — repo y catálogo vivo</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.1</td>
+<td>Repo GitHub accesible, tag <code>entrega-1</code>, README con integrantes, mails, tema elegido y cómo ejecutar</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>Dataset de la cátedra se carga (CSV) sin hardcodear las filas en el <code>.py</code></td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>CLI lista el catálogo (aunque sea con <code>list</code> de Python)</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>Informe arrancado: por qué eligieron el tema; qué objetos son mutables e inmutables en su modelo</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>1.5</td>
+<td><code>docs/DECLARACION_IA.md</code> presente (aunque diga “no usamos”)</td>
+<td>10 %</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Entrega 2 — 5 % — funciones, módulos, recursión</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.1</td>
+<td>Código partido en módulos; <code>main</code> no concentra la lógica del dominio</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Recursión del dominio correcta, con caso base, sobre el dataset (no un factorial de juguete)</td>
+<td>35 %</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>Traza de un ejemplo en el informe</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>Protocolo de pruebas con al menos 8 casos escritos (entrada, esperado, aún no hace falta ejecutarlos todos)</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>Declaración de IA actualizada + el tag corre</td>
+<td>10 %</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Entrega 3 — 9 % — TADs, lineales, excepciones</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td><code>ListaEnlazada</code> propia con nodos (insertar, eliminar, buscar, tamaño). Un <code>list</code> interno cuenta como N</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>Iterador funcionando; el listado del catálogo o de la colección lo usa</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td><code>Pila</code> y <code>Cola</code> implementadas <strong>sobre</strong> la lista enlazada, usadas en el dominio (historial y cola)</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td>Colección principal (equipo / menú / playlist) sobre <code>ListaEnlazada</code>, con tope si aplica (equipo de 6)</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>Encapsulamiento: atributos no se manosean desde el CLI; métodos con nombres claros</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td>Excepciones propias capturadas en el menú (sin <code>except:</code>)</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>3.7</td>
+<td>Protocolo de pruebas <strong>ejecutado</strong> (columna pasa / no pasa / comentarios)</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>3.8</td>
+<td>Tag corre; declaración de IA al día</td>
+<td>5 %</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Entrega 4 — 7 % — búsqueda, orden, complejidad</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.1</td>
+<td>Búsqueda lineal propia, usada desde el CLI</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>Búsqueda binaria propia sobre colección ordenada; el CLI no la ofrece si no está ordenada (o reordena y avisa)</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>Dos algoritmos de ordenamiento <strong>propios</strong> (no <code>sorted</code>). Criterios distintos o un criterio + estable vs. no)</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>4.4</td>
+<td>Tabla de complejidad de las operaciones del sistema</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>Medición con <code>time.perf_counter</code> (dataset original y una versión agrandada, o al menos dos tamaños)</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>4.6</td>
+<td>Tag corre; no rompieron E2/E3</td>
+<td>5 %</td>
+</tr>
+</tbody>
+</table>
+<p>Usar <code>sorted</code> / <code>list.sort</code> para cumplir 4.2–4.3 = N en esos ítems.</p>
+<hr />
+<h2>Entrega 5 — 7 % — archivos texto y binario</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5.1</td>
+<td>Guardar y cargar el catálogo en CSV (secuencial). Tras cerrar y abrir el programa, los datos siguen</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>Archivo binario con <code>struct</code>, registros de longitud fija, header documentado</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>Actualizar <strong>un</strong> registro por posición (seek / índice), sin reescribir todo el archivo a mano en un único <code>write</code></td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>Alta / baja / modificación persistente desde el CLI</td>
+<td>15 %</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>Excepción de archivo inválido (binario corto, magia incorrecta, CSV roto)</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>5.6</td>
+<td>Tag corre; informe con el layout del registro</td>
+<td>5 %</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Entrega 6 + defensa — 8 % — cierre</h2>
+<h3>Repo (5 de los 8 puntos)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Ítem</th>
+<th>Peso interno (sobre 5)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6.1</td>
+<td>Las 10 operaciones del menú (consigna §3.1) funcionan sobre el dataset de la cátedra</td>
+<td>40 %</td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>Informe completo (modelo, TADs, recursión, complejidad, persistencia, reparto de trabajo)</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>6.3</td>
+<td>Protocolo de pruebas de regresión ejecutado (mínimo 15 casos, cubriendo pila, cola, archivos, recursión, búsquedas)</td>
+<td>20 %</td>
+</tr>
+<tr>
+<td>6.4</td>
+<td>README de producto (cómo ejecutar, limitaciones, tema)</td>
+<td>10 %</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>Declaración de IA final coherente con el repo</td>
+<td>10 %</td>
+</tr>
+</tbody>
+</table>
+<h3>Oral (3 de los 8 puntos)</h3>
+<p>10 minutos. Los tres puntos se reparten entre integrantes; si uno no habla o no puede defender, <strong>esa persona</strong> tiene 0 en el oral (el resto conserva su oral).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Qué se mira</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O1</td>
+<td>Explicar un TAD con invariante (pila, cola o lista)</td>
+</tr>
+<tr>
+<td>O2</td>
+<td>Traza de la recursión o del binario (layout + un <code>seek</code>)</td>
+</tr>
+<tr>
+<td>O3</td>
+<td>Responder un “¿y si…?” (equipo lleno, cola vacía, archivo truncado, catálogo no ordenado)</td>
+</tr>
+</tbody>
+</table>
+<p>C / P / N también acá. Lectura de código en voz alta sin saber qué hace = N.</p>
+<hr />
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+  </footer>
+</body>
+</html>

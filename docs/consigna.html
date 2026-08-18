@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consigna — AyED C2 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <small>00184 · UNaB · C2 2026</small>
+        <strong>TP integrador</strong>
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consigna.html" aria-current="page">Consigna</a>
+        <a href="cronograma.html">Cronograma</a>
+        <a href="rubrica.html">Rúbrica</a>
+        <a href="entregar.html">Cómo entregar</a>
+        <a href="datasets.html">Datasets</a>
+      </nav>
+    </div>
+  </header>
+  <main class="doc">
+    <h1>TP integrador — Algoritmos y Estructuras de Datos</h1>
+<p><strong>Cátedra:</strong> 00184 — Algoritmos y Estructuras de Datos<br />
+<strong>Cuatrimestre:</strong> C2 2026<br />
+<strong>Lenguaje:</strong> Python 3<br />
+<strong>Modalidad:</strong> grupos de <strong>2 o 3</strong> personas · programa de <strong>consola (CLI)</strong><br />
+<strong>Entregas:</strong> 6 incrementales, domingo 23:59, tag de GitHub <code>entrega-N</code></p>
+<p>Este trabajo <strong>reemplaza las prácticas</strong> de la materia. En clase hay mini-ejercicios para fijar cada tema; el hilo conductor del cuatrimestre es <strong>un mismo sistema que crece entrega a entrega</strong>.</p>
+<hr />
+<h2>1. Qué hay que construir</h2>
+<p>Un gestor de catálogo en consola, a elección del grupo, en <strong>uno</strong> de estos tres temas:</p>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Producto</th>
+<th>Analogía rápida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pokédex</strong></td>
+<td>Atlas de Pokémon, equipo de combate e historial</td>
+<td>Pokédex + equipo de 6</td>
+</tr>
+<tr>
+<td><strong>Recetario</strong></td>
+<td>Libro de recetas, menú semanal y cola de preparación</td>
+<td>Recetas con sub-recetas</td>
+</tr>
+<tr>
+<td><strong>Biblioteca musical</strong></td>
+<td>Catálogo de canciones, playlists y cola de reproducción</td>
+<td>Mini reproductor / biblioteca</td>
+</tr>
+</tbody>
+</table>
+<p>Los tres temas son <strong>la misma consigna con otra piel</strong>. Mismas estructuras, mismas entregas, misma rúbrica. Cambian los nombres del dominio.</p>
+<p>No se pide interfaz gráfica ni web. Solo biblioteca estándar de Python (<code>csv</code>, <code>json</code> no es obligatorio, <code>struct</code>, <code>pathlib</code>, <code>argparse</code> o menú con <code>input</code>, <code>abc</code>, <code>datetime</code>, etc.). Si una librería no viene con Python, no se puede usar.</p>
+<hr />
+<h2>2. Mapa del dominio (el mismo TP, tres pieles)</h2>
+<table>
+<thead>
+<tr>
+<th>Concepto de la materia</th>
+<th>Pokédex</th>
+<th>Recetario</th>
+<th>Biblioteca musical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entidad del catálogo</td>
+<td>Pokémon</td>
+<td>Receta</td>
+<td>Canción</td>
+</tr>
+<tr>
+<td>Catálogo</td>
+<td>Pokédex</td>
+<td>Libro de recetas</td>
+<td>Biblioteca</td>
+</tr>
+<tr>
+<td>Relación <strong>recursiva</strong></td>
+<td>Cadena de evoluciones</td>
+<td>Sub-recetas</td>
+<td>Versiones (cover, live, remix)</td>
+</tr>
+<tr>
+<td>Colección lineal principal</td>
+<td>Equipo (máx. 6)</td>
+<td>Menú de la semana</td>
+<td>Playlist</td>
+</tr>
+<tr>
+<td><strong>Pila</strong></td>
+<td>Historial de acciones (deshacer)</td>
+<td>Historial de recetas cocinadas</td>
+<td>Historial de reproducción</td>
+</tr>
+<tr>
+<td><strong>Cola</strong></td>
+<td>Cola de turnos de combate</td>
+<td>Cola de preparación</td>
+<td>Cola de reproducción</td>
+</tr>
+<tr>
+<td>Búsqueda</td>
+<td>Nombre, tipo, nro.</td>
+<td>Nombre, ingrediente, categoría</td>
+<td>Título, artista, género</td>
+</tr>
+<tr>
+<td>Ordenamiento</td>
+<td>Ataque, velocidad, nro.</td>
+<td>Tiempo, dificultad</td>
+<td>Año, duración, título</td>
+</tr>
+<tr>
+<td>Archivo de texto</td>
+<td><code>pokedex.csv</code></td>
+<td><code>recetas.csv</code> (+ ingredientes)</td>
+<td><code>canciones.csv</code></td>
+</tr>
+<tr>
+<td>Archivo binario</td>
+<td>registros de Pokémon</td>
+<td>registros de receta</td>
+<td>registros de canción</td>
+</tr>
+<tr>
+<td>Excepciones típicas</td>
+<td>Equipo lleno, Pokémon no encontrado</td>
+<td>Ingrediente/sub-receta faltante</td>
+<td>Cola vacía, canción no encontrada</td>
+</tr>
+</tbody>
+</table>
+<p>El dataset inicial de cada tema está en <code>esqueleto/data/</code>. Pueden ampliarlo, no pueden vaciarlo.</p>
+<hr />
+<h2>3. Requisitos transversales (valen para los tres temas)</h2>
+<h3>3.1 CLI</h3>
+<p>Menú de texto, claro, que no se rompa con input vacío o basura. Operaciones mínimas al final del cuatrimestre:</p>
+<ol>
+<li>Listar catálogo (usando el <strong>iterador</strong> de la lista enlazada).</li>
+<li>Ver detalle de un ítem.</li>
+<li>Buscar (lineal; binaria cuando el catálogo esté ordenado).</li>
+<li>Ordenar por al menos dos criterios.</li>
+<li>Operación recursiva del dominio (sección 2).</li>
+<li>ABM sobre la colección principal (equipo / menú / playlist).</li>
+<li>Push/pop de la pila (historial / deshacer).</li>
+<li>Encolar/desencolar la cola.</li>
+<li>Guardar y cargar catálogo en <strong>texto (CSV)</strong> y en <strong>binario</strong>.</li>
+<li>Salir.</li>
+</ol>
+<h3>3.2 TADs obligatorios (implementación propia)</h3>
+<p>Hay que implementar, en módulos separados, con encapsulamiento:</p>
+<ul>
+<li><code>Nodo</code></li>
+<li><code>ListaEnlazada</code> — insertar (al inicio, al final, en orden), eliminar, buscar, tamaño, <strong>iterador</strong> (<code>__iter__</code> / <code>__next__</code> o <code>yield</code>). No alcanza con un <code>list</code> de Python disfrazado.</li>
+<li><code>Pila</code> — <strong>sobre</strong> <code>ListaEnlazada</code> (no sobre <code>list</code>). <code>apilar</code>, <code>desapilar</code>, <code>ver_tope</code>, <code>esta_vacia</code>.</li>
+<li><code>Cola</code> — <strong>sobre</strong> <code>ListaEnlazada</code>. <code>encolar</code>, <code>desencolar</code>, <code>ver_frente</code>, <code>esta_vacia</code>.</li>
+</ul>
+<p>La colección principal del dominio (equipo, menú o playlist) <strong>debe</strong> usar <code>ListaEnlazada</code>. El historial usa <code>Pila</code>. La cola de turnos / preparación / reproducción usa <code>Cola</code>.</p>
+<p>El catálogo completo puede vivir en la lista enlazada. Si en la entrega 4 arman un índice auxiliar (<code>dict</code>) para discutir complejidad, tiene que estar justificado en el informe: qué ganan y qué pagan.</p>
+<h3>3.3 Recursión</h3>
+<p>Una función recursiva de verdad, sobre el dataset, con caso base explícito. Ejemplos:</p>
+<ul>
+<li>Pokédex: imprimir la cadena de evoluciones hacia adelante (y, si pueden, pre-evoluciones).</li>
+<li>Recetario: desglosar una receta en ingredientes totales, explotando sub-recetas.</li>
+<li>Música: listar todas las versiones derivadas de una canción (cover, live, remix).</li>
+</ul>
+<p>Incluir en el informe <strong>una traza</strong> de una llamada (cómo se apilan los casos).</p>
+<h3>3.4 Excepciones</h3>
+<p>Excepciones propias, como mínimo: ítem no encontrado, colección llena o vacía, pila vacía, cola vacía, archivo inválido. El CLI las captura y muestra un mensaje usable. Nada de <code>except:</code> pelado.</p>
+<h3>3.5 Archivos</h3>
+<p>Dos formatos, los dos de verdad:</p>
+<ol>
+<li><strong>Texto / CSV secuencial.</strong> Lectura y escritura completa del catálogo (y tablas auxiliares si aplica: evoluciones, ingredientes, versiones).</li>
+<li><strong>Binario de registros de longitud fija</strong> con <code>struct</code>. Header (magia <code>AYED</code>, tema, cantidad) + registros. Poder <strong>actualizar un registro por posición</strong> (acceso directo), no solo reescribir el archivo entero.</li>
+</ol>
+<p>Las cadenas en binario van en UTF-8, recortadas o rellenadas con <code>\0</code> a un ancho fijo documentado en el informe.</p>
+<h3>3.6 Búsqueda y ordenamiento (implementación propia)</h3>
+<p>Prohibido usar <code>list.sort</code>, <code>sorted</code>, <code>bisect</code> o equivalentes para cumplir el requisito. Pueden usarlos en un apéndice comparativo.</p>
+<ul>
+<li>Búsqueda lineal.</li>
+<li>Búsqueda binaria sobre el catálogo <strong>ya ordenado</strong>.</li>
+<li>Al menos <strong>dos</strong> algoritmos de ordenamiento vistos en la materia (por ejemplo selección e inserción; Shell o alguno avanzado suma).</li>
+</ul>
+<h3>3.7 Complejidad</h3>
+<p>Tabla en el informe: operación → complejidad en tiempo (y espacio si importa) → breve justificación. Medir tiempos con <code>time.perf_counter</code> sobre el dataset y, si pueden, sobre una copia agrandada (repetir filas) para mostrar la tendencia. No hace falta un paper: hace falta que se note que midieron.</p>
+<h3>3.8 Documentación (va creciendo)</h3>
+<table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th>Desde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>README.md</code></td>
+<td>Entrega 1</td>
+</tr>
+<tr>
+<td><code>docs/INFORME.md</code></td>
+<td>Entrega 1, se completa en 4 y 6</td>
+</tr>
+<tr>
+<td><code>docs/PROTOCOLO_PRUEBAS.md</code></td>
+<td>Entrega 2, ejecutado en 3 y 6</td>
+</tr>
+<tr>
+<td><code>docs/DECLARACION_IA.md</code></td>
+<td>Entrega 1, actualizado <strong>en cada entrega</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Idioma del repo: el que elijan, <strong>el mismo</strong> en código, mensajes y docs.</p>
+<hr />
+<h2>4. Cómo se entrega</h2>
+<ol>
+<li>Un único repositorio <strong>GitHub</strong> por grupo (público o privado con acceso a la cátedra).</li>
+<li>Partir del esqueleto publicado por la cátedra (fork o copia, conservando la estructura de carpetas).</li>
+<li>En el campus: <strong>URL del repo</strong> + tag. El código que se corrige es el del tag, no el de <code>main</code> suelto.</li>
+<li>Tags obligatorios: <code>entrega-1</code> … <code>entrega-6</code>.</li>
+<li>Vencimiento: <strong>domingo 23:59</strong> (hora Argentina) de la fecha de cada entrega.</li>
+</ol>
+<p><strong>Atraso:</strong> hasta el martes 23:59 siguiente, con <strong>−25 %</strong> de esa entrega. Después no se acepta. La entrega 6 <strong>no admite atraso</strong> (hay defensas en la semana 16). Una excepción justificada (salud, trámite) se avisa <strong>antes</strong> del vencimiento.</p>
+<p><strong>Defensa oral (semana 16, 10 minutos):</strong> todos los integrantes hablan. Pueden pedir cualquier función, traza de recursión, invariante de la pila, formato del binario o un caso del protocolo de pruebas. Si alguien no puede explicar el código que “escribió”, esa persona no aprueba el TP aunque el repo esté bien.</p>
+<hr />
+<h2>5. Uso de IA</h2>
+<p>Está <strong>permitida</strong> (ChatGPT, Cursor, Copilot, etc.) con tres condiciones:</p>
+<ol>
+<li>Completar <code>docs/DECLARACION_IA.md</code> en cada entrega (herramienta, fecha, para qué, qué reescribieron).</li>
+<li>Entender y poder defender <strong>todo</strong> el código del tag.</li>
+<li>No entregar un repo que el grupo no pueda modificar en vivo.</li>
+</ol>
+<p>No declarar IA cuando se usó es suficiente para anular esa entrega.</p>
+<hr />
+<h2>6. Calendario de entregas</h2>
+<table>
+<thead>
+<tr>
+<th>Entrega</th>
+<th>Vence</th>
+<th>Cubre (clase)</th>
+<th>Qué tiene que andar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E1</strong></td>
+<td><strong>domingo 30-ago-2026</strong></td>
+<td>Semanas 1–2</td>
+<td>Repo, README, integrantes, tema elegido, dataset cargado, listar catálogo, tipos usados con justificación breve (qué es mutable y qué no). CLI mínimo.</td>
+</tr>
+<tr>
+<td><strong>E2</strong></td>
+<td><strong>domingo 13-sep-2026</strong></td>
+<td>Semanas 3–4</td>
+<td>Módulos. Funciones con responsabilidades claras. <strong>Recursión del dominio</strong> con traza en el informe. Protocolo de pruebas (casos escritos, todavía no hace falta haber corrido todos).</td>
+</tr>
+<tr>
+<td><strong>E3</strong></td>
+<td><strong>domingo 04-oct-2026</strong></td>
+<td>Semanas 4–7 + recuperación sem. 5</td>
+<td>Objetos + encapsulamiento. <code>ListaEnlazada</code> + iterador. Pila y cola sobre esa lista. Colección principal del dominio. Excepciones propias. Menú CLI usable. Protocolo ejecutado (tabla pasa / no pasa).</td>
+</tr>
+<tr>
+<td><strong>E4</strong></td>
+<td><strong>domingo 01-nov-2026</strong></td>
+<td>Semanas 10–11</td>
+<td>Búsqueda lineal y binaria. Dos ordenamientos propios. Tabla de complejidad + medición de tiempos.</td>
+</tr>
+<tr>
+<td><strong>E5</strong></td>
+<td><strong>domingo 15-nov-2026</strong></td>
+<td>Semanas 12–13</td>
+<td>CSV secuencial + binario con <code>struct</code>. Alta / baja / modificación persistente. Acceso a un registro por posición.</td>
+</tr>
+<tr>
+<td><strong>E6</strong></td>
+<td><strong>domingo 22-nov-2026</strong></td>
+<td>Integración</td>
+<td>Producto cerrado: las 10 operaciones del menú, informe completo, protocolo de pruebas de regresión, declaración de IA al día. <strong>Defensa oral: 02 y 04-dic-2026.</strong></td>
+</tr>
+</tbody>
+</table>
+<p>La entrega 3 cierra <strong>diez días antes del 1er parcial</strong>. La 6 cierra antes del 2do parcial; la defensa es en la semana de cierre de notas.</p>
+<hr />
+<h2>7. Evaluación</h2>
+<table>
+<thead>
+<tr>
+<th>Instancia</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1er parcial</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>2do parcial</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>Entrega 1</td>
+<td>4 %</td>
+</tr>
+<tr>
+<td>Entrega 2</td>
+<td>5 %</td>
+</tr>
+<tr>
+<td>Entrega 3</td>
+<td>9 %</td>
+</tr>
+<tr>
+<td>Entrega 4</td>
+<td>7 %</td>
+</tr>
+<tr>
+<td>Entrega 5</td>
+<td>7 %</td>
+</tr>
+<tr>
+<td>Entrega 6 + defensa</td>
+<td>8 %</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Cada parcial se aprueba con <strong>60 %</strong>. Recuperatorios según cronograma.</li>
+<li>El TP se aprueba con <strong>24 / 40</strong> (60 %) <strong>y</strong> defensa oral con todos los integrantes.</li>
+<li>Cada entrega se corrige con el checklist de <code>rubrica.md</code>. Entrega que no corre (el CLI no arranca) se puntúa 0 en “funciona”.</li>
+<li>Nota extra (hasta 2 puntos del TP, no pasa de 40): usar la lista enlazada también en el catálogo <strong>y</strong> un índice <code>dict</code> comparado en el informe; o un tercer algoritmo de ordenamiento medido.</li>
+</ul>
+<p>Las autoevaluaciones y la guía de prácticos del programa 2023 quedan absorbidas por este TP.</p>
+<hr />
+<h2>8. Qué no hace falta</h2>
+<ul>
+<li>Frameworks, GUI, web, base de datos, pandas, numpy.</li>
+<li>Tests automatizados con <code>pytest</code> (el protocolo manual es el requisito).</li>
+<li>Gráficos de Pokémon, audio real, ni una receta que se pueda cocinar de verdad: el valor está en las estructuras.</li>
+<li>Reimplementar el universo completo del tema. El dataset de la cátedra alcanza.</li>
+</ul>
+<hr />
+<h2>9. Armado de grupos</h2>
+<ul>
+<li>2 o 3 estudiantes. No hay grupos de 1 salvo excepción explícita de la cátedra.</li>
+<li>Nombres, mails y GitHub en el <code>README.md</code> desde E1.</li>
+<li>Si alguien abandona: avisar. El resto sigue; no se reabre el cupo después de E2 salvo motivo grave.</li>
+<li>El trabajo tiene que poder explicarse por cualquiera. “Eso lo hizo el otro” no es respuesta válida en la defensa.</li>
+</ul>
+<hr />
+<h2>10. Criterio de “entrega sucesiva incremental”</h2>
+<p>Cada tag <strong>incluye</strong> lo anterior y <strong>suma</strong> lo nuevo. No se entrega un script suelto distinto cada vez. Si en E4 rompen la recursión de E2, E4 pierde los puntos de regresión (ver rúbrica).</p>
+<p>El esqueleto ya tiene las carpetas <code>src/tads</code>, <code>src/algoritmos</code>, <code>src/persistencia</code>, <code>src/dominio</code>. Completen ahí. No entreguen un único <code>tp.py</code> de 800 líneas.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+  </footer>
+</body>
+</html>

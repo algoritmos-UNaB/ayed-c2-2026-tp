@@ -1,0 +1,68 @@
+id,titulo,artista,album,genero,anio,duracion_seg
+1,De Musica Ligera,Soda Stereo,Cancion Animal,Rock,1990,213
+2,Persiana Americana,Soda Stereo,Signos,Rock,1986,263
+3,En la Ciudad de la Furia,Soda Stereo,Doble Vida,Rock,1988,351
+4,Crimen,Gustavo Cerati,Ahí vamos,Rock,2006,239
+5,Adios,Gustavo Cerati,Fuerza Natural,Rock,2009,233
+6,Muchacha ojos de papel,Luis Alberto Spinetta,Almendra,Rock,1969,203
+7,Cantata de Puentes Amarillos,Luis Alberto Spinetta,Artaud,Rock,1973,557
+8,Rasguña las Piedras,Sui Generis,Confesiones de Invierno,Rock,1973,196
+9,Seminare,Seru Giran,La Grasa de las Capitales,Rock,1979,241
+10,Los Dinosaurios,Charly Garcia,Clics Modernos,Rock,1983,241
+11,Demoliendo Hoteles,Charly Garcia,Piano Bar,Rock,1984,151
+12,Jijiji,Patricio Rey y sus Redonditos de Ricota,Un Baion para el Ojo Idiota,Rock,1988,316
+13,Ji Ji Ji,Patricio Rey y sus Redonditos de Ricota,En Directo,Rock,1992,318
+14,La Bestia Pop,Patricio Rey y sus Redonditos de Ricota,Oktubre,Rock,1986,240
+15,Alfonsina y el mar,Mercedes Sosa,Mujeres Argentinas,Folklore,1969,298
+16,Gracias a la Vida,Mercedes Sosa,Hasta la Victoria,Folklore,1971,271
+17,La Balsa,Los Gatos,Los Gatos,Rock,1967,187
+18,El Extraño de Pelo Largo,Almendra,Almendra,Rock,1969,198
+19,Flaca,Andres Calamaro,Honestidad Brutal,Rock,1999,263
+20,Lamento Boliviano,Los Enanitos Verdes,Big Bang,Rock,1994,223
+21,La Guitarra,Los Autenticos Decadentes,Mi Enfermedad,Cumbia,1997,201
+22,Waka Waka,Shakira,Sale el Sol,Pop,2010,202
+23,Bzrp Music Sessions Vol. 52,Bizarrap,Sessions,Urbano,2022,201
+24,Bzrp Music Sessions Vol. 53,Bizarrap,Sessions,Urbano,2023,194
+25,Natacha,Wos,Oscuro Extasis,Urbano,2019,183
+26,Canguros,Wos,Tres Puntos Suspensivos,Urbano,2021,176
+27,Buenos Aires,Nathy Peluso,Calambre,Urbano,2020,198
+28,Despecha,Rosalia,Motomami,Pop,2022,157
+29,Titi Me Pregunto,Bad Bunny,Un Verano Sin Ti,Urbano,2022,243
+30,Anti-Hero,Taylor Swift,Midnights,Pop,2022,201
+31,Blank Space,Taylor Swift,1989,Pop,2014,231
+32,Bohemian Rhapsody,Queen,A Night at the Opera,Rock,1975,354
+33,Bohemian Rhapsody (Live Aid),Queen,Live Aid,Rock,1985,362
+34,Don't Stop Me Now,Queen,Jazz,Rock,1978,209
+35,Come Together,The Beatles,Abbey Road,Rock,1969,259
+36,Here Comes the Sun,The Beatles,Abbey Road,Rock,1969,185
+37,Get Lucky,Daft Punk,Random Access Memories,Electronica,2013,248
+38,One More Time,Daft Punk,Discovery,Electronica,2000,320
+39,Rolling in the Deep,Adele,21,Pop,2010,228
+40,Someone Like You,Adele,21,Pop,2011,285
+41,Do I Wanna Know,Arctic Monkeys,AM,Rock,2013,272
+42,505,Arctic Monkeys,Favourite Worst Nightmare,Rock,2007,214
+43,Blinding Lights,The Weeknd,After Hours,Pop,2019,200
+44,Levitating,Dua Lipa,Future Nostalgia,Pop,2020,203
+45,As It Was,Harry Styles,Harry's House,Pop,2022,167
+46,Smells Like Teen Spirit,Nirvana,Nevermind,Rock,1991,301
+47,Wonderwall,Oasis,What's the Story Morning Glory,Rock,1995,258
+48,Wonderwall (Live),Oasis,Familiar to Millions,Rock,2000,265
+49,Take On Me,a-ha,Hunting High and Low,Pop,1985,225
+50,Africa,Toto,Toto IV,Pop,1982,296
+51,Billie Jean,Michael Jackson,Thriller,Pop,1982,294
+52,Billie Jean (Remix),Michael Jackson,Thriller 40,Pop,2022,292
+53,Clocks,Coldplay,A Rush of Blood to the Head,Rock,2002,307
+54,Yellow,Coldplay,Parachutes,Rock,2000,269
+55,Creep,Radiohead,Pablo Honey,Rock,1992,238
+56,Karma Police,Radiohead,OK Computer,Rock,1997,261
+57,Vino Griego,Los Abuelos de la Nada,Vasos y Besos,Rock,1983,214
+58,Lunes Por La Madrugada,Los Abuelos de la Nada,Los Abuelos de la Nada,Rock,1982,241
+59,El Aguante,Divididos,Gol de Mujer,Rock,1998,245
+60,Que Ves,Divididos,Acariciando lo Aspero,Rock,1991,232
+61,Gracias a la Vida,Violeta Parra,Las Ultimas Composiciones,Folklore,1966,258
+62,De Musica Ligera (Unplugged),Soda Stereo,Comfort y Musica Para Volar,Rock,1996,221
+63,Flaca (En vivo),Andres Calamaro,Vivo,Rock,2000,270
+64,Creep (Live),Radiohead,The Astoria London,Rock,1994,245
+65,Yellow (Live),Coldplay,Live 2003,Rock,2003,280
+66,Blank Space (Acoustic),Taylor Swift,1989,Pop,2014,228
+67,Get Lucky (Daft Punk Remix),Daft Punk,Random Access Memories,Electronica,2013,248

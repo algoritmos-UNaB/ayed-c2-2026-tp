@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datasets — AyED C2 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <small>00184 · UNaB · C2 2026</small>
+        <strong>TP integrador</strong>
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="consigna.html">Consigna</a>
+        <a href="cronograma.html">Cronograma</a>
+        <a href="rubrica.html">Rúbrica</a>
+        <a href="entregar.html">Cómo entregar</a>
+        <a href="datasets.html" aria-current="page">Datasets</a>
+      </nav>
+    </div>
+  </header>
+  <main class="doc">
+    
+<h1>Datasets</h1>
+<p>Elegí un tema. Los CSV van en UTF-8, con encabezado. No hardcodees las filas en el código: leé los archivos.</p>
+<table>
+  <thead><tr><th>Tema</th><th>Archivos</th><th>Recursión</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Pokédex</td>
+      <td><a href="data/pokedex.csv">pokedex.csv</a>, <a href="data/evoluciones.csv">evoluciones.csv</a></td>
+      <td><code>origen_id</code> → <code>destino_id</code></td>
+    </tr>
+    <tr>
+      <td>Recetario</td>
+      <td><a href="data/recetas.csv">recetas.csv</a>, <a href="data/ingredientes.csv">ingredientes.csv</a>, <a href="data/subrecetas.csv">subrecetas.csv</a></td>
+      <td>una receta usa sub-recetas</td>
+    </tr>
+    <tr>
+      <td>Biblioteca musical</td>
+      <td><a href="data/canciones.csv">canciones.csv</a>, <a href="data/versiones.csv">versiones.csv</a></td>
+      <td>cover, live o remix de otra canción</td>
+    </tr>
+  </tbody>
+</table>
+<p>Están también dentro del esqueleto, en <code>tp-integrador/esqueleto/data/</code>.</p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">Algoritmos y Estructuras de Datos · C2 2026. El código se corrige por tag de GitHub; esta página es la consigna para leer.</div>
+  </footer>
+</body>
+</html>
